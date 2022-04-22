@@ -9,7 +9,7 @@ services:
       - 8080:8080
     environment:
       - PORT=8080
-      - DB_CONNECTION_STRING=root:rahasia@tcp(db:3306)/test?charset=utf8mb4&parseTime=True&loc=Local
+      - DB_CONNECTION_STRING=root:gromizk123@tcp(db:3306)/test?charset=utf8mb4&parseTime=True&loc=Local
 
   db:
     image: bitnami/mysql
