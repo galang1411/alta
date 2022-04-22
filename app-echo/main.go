@@ -14,7 +14,7 @@ import (
 func ConnectDB() (*gorm.DB, error) {
 	connectionString := os.Getenv("DB_CONNECTION_STRING")
 	if connectionString == "" {
-		connectionString = "root:gromizk123@tcp(127.0.0.1:3306)/crud_go?charset=utf8mb4&parseTime=True&loc=Local"
+		connectionString = "root:gromizk123@tcp(127.0.0.1:3306)/test?charset=utf8mb4&parseTime=True&loc=Local"
 	}
 	return gorm.Open(mysql.Open(connectionString), &gorm.Config{})
 }
